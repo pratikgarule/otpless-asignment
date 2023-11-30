@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blank template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="otpless-login-page"></div>
+    <div id="user-display" class="user"></div>
+    <script type="text/javascript" src="https://otpless.com/auth.js"></script>
+    <script type="text/javascript">
+        function otpless(otplessUser) {
+            const stringifiedUser = JSON.stringify(otplessUser)
+            console.log(JSON.stringify(otplessUser));
+            const userDisplay = document.getElementById('user-display');
+            const newParagraph = document.createElement('p');
+            const textNode = document.createTextNode(`User:  ${stringifiedUser}`);
+            newParagraph.appendChild(textNode);
+            userDisplay.appendChild(newParagraph);
+        }
+    </script>
+</body>
+
+</html>

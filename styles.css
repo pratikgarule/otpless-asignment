@@ -1,0 +1,17 @@
+
+.user{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+    width: 100%;
+    font-size: larger;
+    text-align: center;
+
+}
+.user p{
+    
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
